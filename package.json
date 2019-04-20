@@ -1,0 +1,36 @@
+{
+  "name": "phaser-boilerplate",
+  "version": "1.0.0",
+  "description": "phaser.js boilerplate for hobby projects",
+  "license": "ISC",
+  "author": "Todd Roberts",
+  "main": "lib/server/index.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "dev": "set NODE_PATH=./lib&& nodemon --exec babel-node lib/server/index.js",
+    "test": "jest --watchAll",
+    "webpack": "webpack --watch"
+  },
+  "dependencies": {
+    "@babel/core": "^7.4.3",
+    "babel-eslint": "^10.0.1",
+    "chalk": "^2.4.2",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "phaser": "^3.16.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-transform-runtime": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/runtime": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.16.0",
+    "jest": "^24.7.1",
+    "nodemon": "^1.18.11",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0"
+  }
+}
