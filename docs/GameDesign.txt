@@ -1,0 +1,24 @@
+--Concept
+It's a networked, donkey-kong style platformer where 
+two teams of developers battle to see who can
+drink the most coffee. (The coffee is at the top of the level.)
+
+--Target platforms 
+*Web / mobile
+
+--UI / Player controls
+*SPACE for jumping
+*ARROWS for left/right
+
+--Game mechanics
+*Players jump over programs that bother them, like ManicTime, Visio, etc.
+*Players can jump on a FREEZE box that will freeze other players'
+Visual Studio editors. 
+*Players that get to the top and touch the coffee beaker will increase 
+their team's caffeination.
+
+--Assets
+*Sprite for each member of the team
+*Coffee sprite
+*Freeze box sprite and press sound
+*Game music!
