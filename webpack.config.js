@@ -7,7 +7,8 @@ module.exports = {
     modules: [
       path.resolve('./lib'),
       path.resolve('./node_modules')
-    ]
+    ],
+    extensions: ['.js']
   },
   output: {
     path: path.resolve(__dirname, 'public'),
