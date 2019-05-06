@@ -10,8 +10,8 @@
     "test": "jest --watchAll",
     "webpack": "webpack --watch",
     "prebuild": "rm -rf build/*",
-    "build": "webpack --mode=production && babel -d ./build ./lib",
-    "prestart": "yarn build",
+    "build": "./node_modules/.bin/webpack --mode=production",
+    "prestart": "babel -d ./build ./lib",
     "start": "NODE_ENV=production node ./build/server/index.js"
   },
   "dependencies": {
