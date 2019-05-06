@@ -6,14 +6,14 @@
   "author": "Todd Roberts",
   "main": "lib/server/index.js",
   "scripts": {
-    "heroku-prebuild": "yarn install",
+    "heroku-prebuild": "npm install --dev",
     "dev": "NODE_PATH=./lib && nodemon --exec babel-node lib/server/index.js",
     "test": "jest --watchAll",
     "webpack": "webpack --watch",
     "prebuild": "rm -rf build/*",
     "build": "babel -d ./build ./lib",
     "prestart": "yarn build",
-    "start": "NODE_ENV=production node ./build/server/index.js"
+    "start": "node ./build/server/index.js"
   },
   "dependencies": {
     "@babel/core": "^7.4.3",
