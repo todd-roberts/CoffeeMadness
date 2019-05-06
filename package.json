@@ -11,8 +11,8 @@
     "test": "jest --watchAll",
     "webpack": "webpack --watch",
     "prebuild": "rm -rf build/*",
-    "build": "babel -d ./build ./lib",
-    "prestart": "yarn build",
+    "build": "webpack --mode=production && babel -d ./build ./lib",
+    "prestart": "npm run build",
     "start": "node ./build/server/index.js"
   },
   "dependencies": {
